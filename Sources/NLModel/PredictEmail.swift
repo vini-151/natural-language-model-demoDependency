@@ -8,7 +8,7 @@
 import Foundation
 import CoreML
 
-public struct PredictEmail{
+public class PredictEmail{
     
     var input: String
     
