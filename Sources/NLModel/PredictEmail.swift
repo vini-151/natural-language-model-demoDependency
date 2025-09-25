@@ -8,11 +8,7 @@
 import Foundation
 import CoreML
 
-public class PredictEmail{
-    
-    init() {
-        
-    }
+open class PredictEmail{
     
     public func testarModel(input: String) -> EmailClassifierModelOutput? {
         do{
