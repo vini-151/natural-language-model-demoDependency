@@ -10,6 +10,10 @@ import CoreML
 
 public class PredictEmail{
     
+    init() {
+        
+    }
+    
     public func testarModel(input: String) -> EmailClassifierModelOutput? {
         do{
             let config = MLModelConfiguration()
@@ -20,8 +24,9 @@ public class PredictEmail{
             
         }catch{
             //aqui a gente trataria os erros
+            return nil
         }
-        return nil
+        
     }
     
     
