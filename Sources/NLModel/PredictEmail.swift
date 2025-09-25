@@ -11,7 +11,7 @@ import CoreML
 public class PredictEmail{
     
     
-    public init(){
+    public init(){//por que precisamos explicitar o public nesse init vazio?
         
     }
     
