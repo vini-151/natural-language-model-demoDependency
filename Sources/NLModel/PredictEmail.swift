@@ -15,6 +15,9 @@ public class PredictEmail{
         
     }
     
+    ///Funçao para input
+    /// - Parameter input: recebe um texto de email
+    /// - Returns: Retorna o tom do email
     public func testarModel(input: String) -> EmailClassifierModelOutput? {
         do{
             let config = MLModelConfiguration()
