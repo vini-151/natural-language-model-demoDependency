@@ -8,9 +8,9 @@
 import Foundation
 import CoreML
 
-class PredictEmail{
+public class PredictEmail{
     
-    func testarModel(input: String) -> EmailClassifierModelOutput? {
+    public func testarModel(input: String) -> EmailClassifierModelOutput? {
         do{
             let config = MLModelConfiguration()
             let model = try EmailClassifierModel(configuration: config)
