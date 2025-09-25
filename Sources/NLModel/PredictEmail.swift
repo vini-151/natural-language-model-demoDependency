@@ -10,13 +10,12 @@ import CoreML
 
 public class PredictEmail{
     
-    var input: String
     
-    public init(input: String){
-        self.input = input
+    public init(){
+        
     }
     
-    public func testarModel() -> EmailClassifierModelOutput? {
+    public func testarModel(input: String) -> EmailClassifierModelOutput? {
         do{
             let config = MLModelConfiguration()
             let model = try EmailClassifierModel(configuration: config)
