@@ -18,13 +18,13 @@ public class PredictEmail{
     ///Funçao para input
     /// - Parameter input: recebe um texto de email
     /// - Returns: Retorna o tom do email
-    public func testarModel(input: String) -> EmailClassifierModelOutput? {
+    public func predictModel(input: String) -> ToneClassifierModelOutput? {
         do{
             let config = MLModelConfiguration()
-            let model = try EmailClassifierModel(configuration: config)
+            let model = try ToneClassifierModel(configuration: config)
             
-            let predicao = try model.prediction(text: input) //testando com "não gosto de você" irá retornar um "negativo"
-            return predicao
+            let previsao = try model.prediction(text: input) //testando com "não gosto de você" irá retornar um "negativo"
+            return previsao
             
         }catch{
             //aqui a gente trataria os erros
