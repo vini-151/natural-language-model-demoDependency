@@ -8,17 +8,16 @@
 import Foundation
 import CoreML
 
+@available(macOS 14.0, *)
 public class PredictText{
-     
     
     public init(){//por que precisamos explicitar o public nesse init vazio?
-        
     }
     
     ///Funçao para input
-    /// - Parameter input: recebe um texto de email
-    /// - Returns: Retorna o tom do email
-    public func predictModel(input: String) -> String? {
+    /// - Parameter input: recebe uma String texto
+    /// - Returns: Retorna a métrica conclusiva
+	public func predictModel(input: String) -> String? {
         do{
             let config = MLModelConfiguration()
             
@@ -27,6 +26,7 @@ public class PredictText{
             let previsao = try model.prediction(text: input) //testando com "não gosto de você" irá retornar um "negativo"
             
             print("previsao.label: \(previsao.label)")
+            
             
             switch previsao.label {
             case "0":
@@ -45,10 +45,7 @@ public class PredictText{
                 return "sentimento não identificado"
             }
             
-            
-            
         }catch{
-            //aqui a gente trataria os erros
             return nil
         }
         
