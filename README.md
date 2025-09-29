@@ -21,8 +21,9 @@
 default: sentimento não identificado
 
 ## Instruções e exemplo de uso 
-1. Adicione a dependência ao seu projeto através do link 
-	https://github.com/vini-151/natural-language-model-demoDependency.git
+1. Adicione a dependência ao seu projeto através do link
+   
+-	https://github.com/vini-151/natural-language-model-demoDependency.git
 	
 2. Importe a dependência no seu projeto: 
 	
@@ -42,4 +43,5 @@ default: sentimento não identificado
 	let return = predict.predictModel(input: Text)
 	```
 
-## Data set utilizado para treinar nosso modelo (ToneClassifierModel) disponível em: https://www.kaggle.com/datasets/parulpandey/emotion-dataset
+### Data set utilizado para treinar nosso modelo (ToneClassifierModel) disponível em: 
+- https://www.kaggle.com/datasets/parulpandey/emotion-dataset
