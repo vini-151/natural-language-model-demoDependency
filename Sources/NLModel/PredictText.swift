@@ -25,6 +25,8 @@ public class PredictText{
             
             let previsao = try model.prediction(text: input) //testando com "não gosto de você" irá retornar um "negativo"
             
+            print("previsao.label: \(previsao.label)")
+            
             switch previsao.label {
             case "0":
                 return "tristeza"
