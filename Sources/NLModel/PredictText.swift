@@ -9,6 +9,8 @@ import Foundation
 import CoreML
 
 @available(macOS 14.0, *)
+
+/// Classe que tem a função de predição
 public class PredictText{
     
     public init(){//por que precisamos explicitar o public nesse init vazio?
