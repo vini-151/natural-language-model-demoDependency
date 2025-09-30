@@ -1,6 +1,8 @@
-# Natural Language Package 
+# Natural Language Package 🧠📦
 
-## Versões mínimas
+<img src="https://skillicons.dev/icons?i=swift" />
+
+## Versões mínimas 🍎
 - MacOS: 14 
 - iOS: 17
 
