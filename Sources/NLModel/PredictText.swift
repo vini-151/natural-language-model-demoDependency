@@ -23,7 +23,7 @@ public class PredictText{
         do{
             let config = MLModelConfiguration()
             
-            let model = try AdvancedToneClassifierModel(configuration: config)
+            let model = try TweetDataset2(configuration: config)
         
             let previsao = try model.prediction(text: input) //testando com "não gosto de você" irá retornar um "negativo"
             
