@@ -46,4 +46,4 @@ default: sentimento não identificado
 	```
 
 ### Data set utilizado para treinar nosso modelo (ToneClassifierModel) disponível em: 
-- https://www.kaggle.com/datasets/parulpandey/emotion-dataset
+- https://www.kaggle.com/datasets/aadyasingh55/twitter-emotion-classification-dataset/data
