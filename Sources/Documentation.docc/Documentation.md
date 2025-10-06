@@ -44,7 +44,7 @@ default: sentimento não identificado
 	let return = predict.predictModel(input: Text)
 	```
 
-### Data set utilizado para treinar nosso modelo (ToneClassifierModel) disponível em: https://www.kaggle.com/datasets/parulpandey/emotion-dataset
+### Data set utilizado para treinar nosso modelo (ToneClassifierModel) disponível em: https://www.kaggle.com/datasets/aadyasingh55/twitter-emotion-classification-dataset/data
 
 
 - ``PredictEmail/testarModel(input:)``

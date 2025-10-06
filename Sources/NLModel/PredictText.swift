@@ -25,7 +25,7 @@ public class PredictText{
             
             let model = try TweetDataset2(configuration: config)
         
-            let previsao = try model.prediction(text: input) //testando com "não gosto de você" irá retornar um "negativo"
+            let previsao = try model.prediction(text: input)
             
             print("previsao.label: \(previsao.label)")
             
